@@ -3,6 +3,7 @@
 **Data:** 2026-10-21
 **Para:** Empreendedores, product managers, arquitetos atuando na fase pré-product/market fit
 **Pré-requisitos:** Nenhum — este manual assume zero documentação, zero time, zero usuários
+**Antes de começar:** Preencha [`briefing-projeto-template.md`](briefing-projeto-template.md) com o que você já sabe sobre o produto. Para iniciar a sessão no Claude Code, use o [`prompt-abertura-sessao.md`](prompt-abertura-sessao.md).
 
 ---
 

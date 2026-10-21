@@ -3,6 +3,7 @@
 **Data:** 2026-10-21
 **Escopo:** Como conduzir discovery técnico/de-negócio quando o produto ainda é uma ideia — sem stakeholders, sem documentação, sem time, sem usuários
 **Método:** Double Diamond → Wardley Mapping → Impact Mapping + Lean Inception
+**Arquivos complementares:** [`manual-execucao-greenfield-ideacao.md`](manual-execucao-greenfield-ideacao.md) (passo a passo) · [`briefing-projeto-template.md`](briefing-projeto-template.md) (preencha antes de começar) · [`prompt-abertura-sessao.md`](prompt-abertura-sessao.md) (primeira mensagem na sessão Claude)
 
 ---
 
