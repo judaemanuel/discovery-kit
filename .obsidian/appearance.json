@@ -1,0 +1,11 @@
+{
+  "theme": "system",
+  "cssTheme": "Minimal",
+  "baseFontSize": 17,
+  "baseFontSizeAction": false,
+  "enabledCssSnippets": [
+    "pastas"
+  ],
+  "accentColor": "",
+  "textFontFamily": "Atkinson Hyperlegible"
+}

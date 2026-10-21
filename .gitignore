@@ -1,0 +1,13 @@
+# Obsidian
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+.obsidian/hotkeys.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude Code
+.claude/backups/
+.claude/settings.local.json

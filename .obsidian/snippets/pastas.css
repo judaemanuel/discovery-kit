@@ -1,0 +1,6 @@
+.nav-folder-title[data-path^="00-fontes"]          { color: #8a8a8a; }
+.nav-folder-title[data-path^="01-contexto"]        { color: #4a90d9; }
+.nav-folder-title[data-path^="02-entendimento"]{ color: #3fae6a; }
+.nav-folder-title[data-path^="03-analise-critica"] { color: #e0a030; }
+.nav-folder-title[data-path^="04-elicitacao"]      { color: #d9534f; }
+.nav-folder-title[data-path^="_WIP"]               { color: #000000; }
