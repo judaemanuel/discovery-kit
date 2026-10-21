@@ -105,20 +105,20 @@ Wardley Mapping ────────►
 
 ---
 
-### Cenário 4: Plataforma greenfield na fase de ideia — Gestão de Jovens Atletas
+### Cenário 4: Produto greenfield em fase de ideação (empreendedores/investidores)
 
-**Contexto:** Ideia inicial, investidores ainda levantando o conceito. Produto: gestão de jovens atletas com conexão a scouts e portfolio digital. Zero documentação, zero time técnico ainda.
+**Contexto:** Ideia inicial, empreendedores ainda levantando o conceito e validando o mercado. Domínio B2C ou B2B ainda não mapeado — pode ser um marketplace, uma plataforma de conexão entre dois lados, um SaaS vertical. Zero documentação formal, zero time técnico, zero usuários. O que existe são hipóteses dos fundadores sobre o problema e o mercado.
 
 | Método | Resultado | Tokens | Pontos positivos | Pontos negativos |
 |---|---|---|---|---|
 | **Discovery Kit** | ⭐⭐ | Médio | Poderia estruturar o que se sabe e o que não se sabe | **Não foi feito para isso.** O Kit pressupõe stakeholders reais, documentos-fonte e uma decisão GO/NO-GO iminente. Na fase de ideia, não há stakeholders com autoridade canônica — há visionários com hipóteses |
 | **BMAD Phase 1 (Analysis)** | ⭐⭐⭐⭐ | Médio | Analyst persona + PRFAQs + Opportunity summaries; feito para explorar o problema antes de comprometer recursos | As personas (Mary, John) são proxies — não substituem conversas reais com o mercado |
-| **Double Diamond** | ⭐⭐⭐⭐⭐ | Baixo (workshops leves) | Diamond 1 é literalmente "Discover + Define"; pesquisa com usuários, "How Might We", reframing do problema; investidores entendem essa linguagem |
-| **Wardley Mapping** | ⭐⭐⭐⭐ | Baixo | Mapeia o ecossistema: scouts, clubes, atletas, federações, plataformas existentes; revela o que commoditizar vs. onde inovar | Não gera backlog nem spec; é uma ferramenta de estratégia, não de discovery tático |
-| **Impact Mapping + Lean Inception** | ⭐⭐⭐⭐⭐ | Baixo | Impact Map conecta funcionalidades a outcomes de negócio; Lean Inception entrega MVP Canvas em 1 semana; ritmo certo para investidores | Não cobre arquitetura — mas na fase de ideia, arquitetura é prematura |
+| **Double Diamond** | ⭐⭐⭐⭐⭐ | Baixo (workshops leves) | Diamond 1 é literalmente "Discover + Define"; pesquisa com usuários, "How Might We", reframing do problema; empreendedores entendem essa linguagem | Não gera backlog de produto; precisa ser complementado |
+| **Wardley Mapping** | ⭐⭐⭐⭐ | Baixo | Mapeia o ecossistema do negócio: players existentes, commoditizáveis, diferenciais; revela onde construir vs. integrar vs. comprar | Não gera backlog nem spec; é uma ferramenta de estratégia, não de discovery tático |
+| **Impact Mapping + Lean Inception** | ⭐⭐⭐⭐⭐ | Baixo | Impact Map conecta funcionalidades a outcomes de negócio; Lean Inception entrega MVP Canvas em 1 semana; ritmo certo para empreendedores | Não cobre arquitetura — mas na fase de ideia, arquitetura é prematura |
 | **BMAD Quick Flow** | ⭐⭐⭐ | Baixo | Caminho leve do BMAD; Technical Spec → implementação direta para validar hipótese | Bom para protótipo, não para estruturar a descoberta do produto |
 
-**Veredito:** Discovery Kit **não é adequado** para este cenário. Ele pressupõe maturidade de discovery que uma ideia em fase de concepção não tem. A combinação ideal: **Double Diamond (explorar o problema) → Wardley Mapping (entender o ecossistema) → Impact Mapping + Lean Inception (definir MVP)**. O Discovery Kit entra no ciclo seguinte, quando a ideia tiver virado uma demanda com stakeholders reais.
+**Veredito:** Discovery Kit **não é adequado** para este cenário. Ele pressupõe maturidade de discovery que uma ideia em fase de concepção não tem. A combinação ideal: **Double Diamond (explorar o problema) → Wardley Mapping (entender o ecossistema) → Impact Mapping + Lean Inception (definir MVP)**. O Discovery Kit entra no ciclo seguinte, quando a ideia tiver virado uma demanda com stakeholders reais. Um guia detalhado para este cenário está em `docs/discovery-ideia-greenfield.md`.
 
 ---
 
@@ -282,7 +282,7 @@ Discovery Kit                    BMAD Method
 | Novo produto com spec | Discovery Kit + Example Mapping | BMAD (pular Analysis) | ✅ Ideal |
 | Brownfield com spec | EventStorming + arc42 + Context Mapping | Agentic Discovery + Discovery Kit | ⚠️ Parcial (complementar) |
 | Grande plataforma sem spec | Discovery Kit → BMAD (combinados) | Lean Inception + C4 | ✅ Ideal |
-| Ideia greenfield (investidores) | Double Diamond + Wardley + Lean Inception | BMAD Phase 1 (Analysis) | ❌ Prematuro |
+| Ideia greenfield sem spec (empreendedores) | Double Diamond + Wardley + Lean Inception | BMAD Phase 1 (Analysis) | ❌ Prematuro — ver docs/discovery-ideia-greenfield.md |
 | Modernização legacy crítico | Agentic Discovery + arc42 + TOGAF | BMAD brownfield | ❌ Não cobre |
 | Compliance-driven | Discovery Kit + TOGAF + Example Mapping | BMAD Enterprise | ✅ Ideal |
 | Startup 3 devs | BMAD Quick Flow | Example Mapping + ADRs | ❌ Overkill |
