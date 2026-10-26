@@ -44,7 +44,7 @@ Um esqueleto de vault Obsidian + Claude Code para condução de **discovery téc
 ## O que está aqui vs. o que você precisa preencher
 
 **Pronto para usar:**
-- `CLAUDE.md`, `.claude/settings.json`, `.claude/hooks/session-start.ps1` — automação de contexto, portáveis como estão.
+- `CLAUDE.md`, `.claude/settings.json`, `.claude/hooks/session-start.sh` — automação de contexto, portáveis como estão.
 - `.discovery/guias/GUIA-WIP.md`, `GUIA-FRONTMATTER.md`, `GUIA-FLUXO-DISCOVERY.md` — guias de processo, genéricos.
 - `.discovery/tools/*.py` + `spec-citacoes.md` — scripts e convenção de citação, genéricos.
 - `.obsidian/*.json` + `snippets/pastas.css` — config estrutural do Obsidian.

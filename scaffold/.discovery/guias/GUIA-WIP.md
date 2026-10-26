@@ -44,7 +44,7 @@ Não inventar categorias novas sem necessidade — se o conteúdo não se encaix
 
 ## O que é manual vs. o que é automático
 
-Avalie hooks (`SessionStart`) para injetar os guias automaticamente a cada sessão (ver `.claude/hooks/session-start.ps1` neste scaffold). Para bloqueio de ação (não só injeção de contexto), hooks `PreToolUse` são o mecanismo correto — mas valem o custo de manutenção só para regras mecanicamente checáveis (nome de arquivo, frontmatter obrigatório), não para julgamento semântico (ex.: "este conteúdo é um resumo de dia?").
+Avalie hooks (`SessionStart`) para injetar os guias automaticamente a cada sessão (ver `.claude/hooks/session-start.sh` neste scaffold). Para bloqueio de ação (não só injeção de contexto), hooks `PreToolUse` são o mecanismo correto — mas valem o custo de manutenção só para regras mecanicamente checáveis (nome de arquivo, frontmatter obrigatório), não para julgamento semântico (ex.: "este conteúdo é um resumo de dia?").
 
 Classificação de arquivo (resolvido/ativo/obsoleto) e qualquer exclusão devem continuar sendo decididas com confirmação explícita — nunca automáticas, para não arriscar apagar algo relevante sem revisão.
 
