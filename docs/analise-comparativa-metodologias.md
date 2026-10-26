@@ -4,7 +4,7 @@
 **Escopo:** Discovery Kit (este projeto) × BMAD Method × 12 metodologias alternativas
 **Critérios:** qualidade do output, eficiência de tokens, cobertura de cenários, maturidade, curva de aprendizado
 
-> **Nota (0.2.0):** esta análise descreve o kit na versão 0.1.0. Desde então o hook virou bash (`session-start.sh`, cross-platform) e os guias passaram para `.discovery/guias/` (`_WIP/README.md` virou `GUIA-WIP.md`). Os trechos abaixo mantêm os nomes antigos como registro da época.
+> **Nota (0.2.0):** esta análise descreve o kit na versão 0.1.0. Desde então o hook foi substituído por `@import` no `CLAUDE.md` (cross-platform) e os guias passaram para `.discovery-kit/guias/` (`_WIP/README.md` virou `GUIA-WIP.md`). Os trechos abaixo mantêm os nomes antigos como registro da época.
 
 ---
 

@@ -12,7 +12,7 @@ Gerador de um vault Obsidian + Claude Code para **discovery técnico/negócio** 
 
 Sem argumento, a instância é criada em `../discovery-instance`. O script copia `scaffold/` para o destino, grava `.discovery-kit-version.json` (versão do gerador e data) e faz o commit inicial. O destino precisa estar vazio ou não existir.
 
-Requisitos: `bash`, `git` e `python3` (usado pelo hook `SessionStart` e pelos scripts de `.discovery-kit/tools/`).
+Requisitos: `bash` e `git` para rodar o `install.sh` (no Windows, Git Bash ou WSL); a instância em si só precisa de `python` (3.x) para os scripts de `.discovery-kit/tools/`. Nenhum hook: os guias entram por `@import` no `CLAUDE.md`.
 
 ## Estrutura do repositório
 

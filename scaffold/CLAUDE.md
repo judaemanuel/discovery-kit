@@ -1,13 +1,13 @@
 # CLAUDE.md — Vault [PEDIDO] (Discovery)
 
 Guia operacional deste vault, carregado automaticamente toda sessão. Detalhes completos (não repetidos aqui) em:
-- `.discovery-kit/guias/GUIA-WIP.md` — ciclo de vida de `_WIP/<data>/`
-- `.discovery-kit/guias/GUIA-FRONTMATTER.md` — schema YAML obrigatório
-- `.discovery-kit/guias/GUIA-FLUXO-DISCOVERY.md` — o loop `03-analise-critica/` ↔ `04-elicitacao/` ↔ reunião, e o checklist pós-reunião
+- @.discovery-kit/guias/GUIA-WIP.md — ciclo de vida de `_WIP/<data>/`
+- @.discovery-kit/guias/GUIA-FRONTMATTER.md — schema YAML obrigatório
+- @.discovery-kit/guias/GUIA-FLUXO-DISCOVERY.md — o loop `03-analise-critica/` ↔ `04-elicitacao/` ↔ reunião, e o checklist pós-reunião
 
-Depois de criar ou editar conteúdo, rode `python3 .discovery-kit/tools/dk.py validar` e corrija os erros (frontmatter e IDs; links saem como avisos, `--estrito` os reprova).
+Depois de criar ou editar conteúdo, rode `python3 .discovery-kit/tools/dk.py validar` (no Windows, `python` ou `py`) e corrija os erros (frontmatter e IDs; links saem como avisos, `--estrito` os reprova).
 
-Um hook `SessionStart` já injeta o conteúdo integral desses 3 guias no início de cada sessão — isto aqui é só o resumo operacional de referência rápida.
+Os 3 guias acima são importados (`@`) e carregados com este arquivo em toda sessão, em qualquer SO — isto aqui é só o resumo operacional de referência rápida.
 
 ## Regras obrigatórias
 

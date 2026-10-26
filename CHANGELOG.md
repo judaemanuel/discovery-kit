@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.1
+
+Portabilidade (Linux, macOS e Windows/PowerShell) e nome da pasta de infraestrutura.
+
+- `.discovery/` renomeada para `.discovery-kit/` (combina com `.discovery-kit-version.json` e `discovery-kit.json`).
+- Hook `SessionStart` removido (`.claude/hooks/` e `.claude/settings.json`): dependia de `bash` e `python3`, que o PowerShell do Windows não oferece por padrão. Os 3 guias agora entram por `@import` no `CLAUDE.md` da instância, sem script.
+- Documentado `python` ou `py` no Windows para rodar `dk.py` e `check_links.py`.
+- `tests/test_scaffold.sh`: o teste de caminhos citados não cobria `.discovery-kit/`; corrigido. Novo teste de que os `@import` do `CLAUDE.md` existem e de que não há hook.
+
 ## 0.3.0
 
 Validador do vault.

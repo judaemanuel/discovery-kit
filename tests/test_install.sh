@@ -9,7 +9,7 @@ PWD_REPO="$(pwd)"
 
 # Caso 1: alvo novo, script chamado por caminho absoluto de outro cwd
 ( cd /tmp && bash "$PWD_REPO/install.sh" "$TMP/fresh" >/dev/null )
-for p in README.md CLAUDE.md 03-analise-critica/README.md _WIP .discovery-kit/guias/GUIA-FLUXO-DISCOVERY.md .discovery-kit/tools/check_links.py .claude/hooks/session-start.sh .claude/skills/dd-arch-diagrams/SKILL.md .obsidian/app.json; do
+for p in README.md CLAUDE.md 03-analise-critica/README.md _WIP .discovery-kit/guias/GUIA-FLUXO-DISCOVERY.md .discovery-kit/tools/check_links.py .claude/skills/dd-arch-diagrams/SKILL.md .obsidian/app.json; do
   [ -e "$TMP/fresh/$p" ] || fail "install.sh não copiou $p"
 done
 [ -d "$TMP/fresh/.git" ] || fail "install.sh não inicializou git no alvo"
