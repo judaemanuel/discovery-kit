@@ -12,7 +12,7 @@ Você vai implementar a SPEC docs/SPEC-evolucao-v2-fluxo-ate-pb-macro.md neste r
 CONTEXTO
 - Este repositório é o GERADOR (`install.sh`, `discovery-kit.json`, `CHANGELOG.md`, `docs/`, `tests/`) de um scaffold genérico de vault Obsidian + Claude Code para discovery; o vault em si vive em `scaffold/`. Ele foi extraído de um projeto real e sanitizado. Nenhum dado de cliente, nome de pessoa ou nome de sistema real pode entrar em qualquer arquivo novo.
 - A SPEC resolve três problemas observados no uso real: (1) o fluxo não tem fim definido (05 e 06 são "futuro"); (2) o fluxo não volta das pastas de trabalho (_WIP) para as definitivas; (3) conteúdo comercial contamina o núcleo.
-- As decisões D1 a D7 da SPEC já foram tomadas. Não as reabra. P1 e P2 foram resolvidos em D6 e D7. A seção 0 da SPEC (adaptação à 0.3.1) traz os caminhos novos e registra P3 (substituto do hook) e P4 (seção Log ausente) como pontos em aberto: aplique o padrão que a seção 0 indica, sinalize-os no resumo final e não os decida além disso. Se surgir outro ponto em aberto, registre-o como pendência.
+- As decisões D1 a D7 da SPEC já foram tomadas. Não as reabra. P1 e P2 foram resolvidos em D6 e D7. A seção 0 da SPEC (adaptação à 0.3.1) traz os caminhos novos e as decisões já tomadas pelo dono do kit: P3 (substituto do hook via check_fluxo --resumo + regra no CLAUDE.md), P4 (criar a seção Log no scaffold/README.md, na T5) e adaptadores/ em scaffold/. Aplique-as; não as reabra. Se surgir outro ponto em aberto, registre-o como pendência.
 - A SPEC foi escrita sobre a 0.1.0. A seção 0 PREVALECE sobre os caminhos do corpo. Em qualquer divergência entre o corpo e a seção 0, siga a seção 0.
 
 ANTES DE ESCREVER QUALQUER ARQUIVO
@@ -42,7 +42,7 @@ VERIFICAÇÃO (obrigatória por tarefa)
 FECHAMENTO
 1. Procure no repositório por: preço, proposta, escopo aberto, escopo fechado, modelo comercial, cliente, nomes próprios. Fora de scaffold/adaptadores/ não pode sobrar nada (docs/ do gerador, CHANGELOG e esta SPEC ficam fora da busca).
 2. Entregue uma tabela final: tarefa | commit | verificação executada | resultado | pendências.
-3. Liste as pendências novas que surgiram e o que precisa ser decidido pelo dono do kit. Herdadas: P3 (substituto do hook), P4 (seção Log ausente) e a localização de adaptadores/ em scaffold/ (seção 0). P1 e P2 estão resolvidos.
+3. Liste as pendências novas que surgiram e o que precisa ser decidido pelo dono do kit. Não há pendências herdadas: P1 a P4 e a localização de adaptadores/ estão resolvidos.
 4. Não faça merge nem push. Pare e aguarde.
 
 COMECE agora pelo passo "ANTES DE ESCREVER QUALQUER ARQUIVO". Responda com a tabela de convenções e peça confirmação antes da T1.

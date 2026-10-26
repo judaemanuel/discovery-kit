@@ -17,12 +17,12 @@ Esta SPEC foi escrita sobre o kit **0.1.0** (vault na raiz, `_WIP/` com os guias
 | `00-fontes/` a `06-backlog/` | `scaffold/00-fontes/` a `scaffold/06-backlog/` |
 | `.tools/check_links.py`, `.tools/check_fluxo.py` (novo) | `scaffold/.discovery-kit/tools/check_links.py`, `check_fluxo.py` |
 | `.tools/testdata/` (T9) | `tests/fixtures/` na raiz do gerador: a fixture é do gerador e não deve ser copiada para as instâncias |
-| `adaptadores/` na raiz (§8) | `scaffold/adaptadores/`: o contrato consome `03`, `05` e `06` de uma instância, então pertence à instância. **Decisão do mantenedor desta adaptação, a confirmar pelo dono do kit** |
+| `adaptadores/` na raiz (§8) | `scaffold/adaptadores/`: o contrato consome `03`, `05` e `06` de uma instância, então pertence à instância. **Confirmado pelo dono do kit** |
 | `.claude/hooks/session-start.ps1` | não existe mais |
 
 **Itens que mudam:**
 
-1. **§7.3e e T6 (hook).** O hook foi removido na 0.3.1: não roda no PowerShell do Windows. Os guias entram por `@import` no `scaffold/CLAUDE.md`. Substituição: `check_fluxo.py` ganha a opção `--resumo` (no máximo 15 linhas, sem bloqueio) e o `CLAUDE.md` ganha a instrução de rodá-lo ao abrir o dia e antes de encerrá-lo. Reintroduzir um hook só para isso reabriria o problema de portabilidade. **Ponto em aberto P3 para o dono do kit.**
+1. **§7.3e e T6 (hook).** O hook foi removido na 0.3.1: não roda no PowerShell do Windows. Os guias entram por `@import` no `scaffold/CLAUDE.md`. Substituição: `check_fluxo.py` ganha a opção `--resumo` (no máximo 15 linhas, sem bloqueio) e o `CLAUDE.md` ganha a instrução de rodá-lo ao abrir o dia e antes de encerrá-lo. Reintroduzir um hook só para isso reabriria o problema de portabilidade. **P3, resolvido pelo dono do kit: adotar esta substituição.**
 2. **T8 (frontmatter).** Além do guia, o validador `scaffold/.discovery-kit/tools/dk.py` tem a lista `TIPOS` fixa. Os novos `tipo/adr`, `tipo/backlog` e `tipo/estimativa` precisam entrar também nele, ou `dk.py validar` os rejeitará.
 
 **Restrições novas vindas de ferramentas que não existiam:**
@@ -32,7 +32,7 @@ Esta SPEC foi escrita sobre o kit **0.1.0** (vault na raiz, `_WIP/` com os guias
 - Windows: o executável do Python é `python` ou `py`; documentar nos novos guias e templates como já é feito no `CLAUDE.md`.
 - Versão: registrar no `CHANGELOG.md` e subir `discovery-kit.json` para 0.4.0 (parte da T10). Atualizar a lista `sistema` se surgir caminho novo do gerador.
 
-**Pendência herdada, não é desta SPEC:** `CLAUDE.md` (regra 5), `01-contexto/README.md` e a skill `dd-arch-diagrams` mandam registrar "1 linha no Log do `README.md` raiz", mas `scaffold/README.md` **não tem seção Log** (foi removida na genericização da 0.1.0). O §7.3d item 1 depende desse Log. Registrar como **P4**: ou se cria a seção `## Log` no `scaffold/README.md` (formato `data | marco | link para _resumo.md`) como parte da T5, ou se declara outro local. Decisão do dono do kit.
+**Pendência herdada, não é desta SPEC:** `CLAUDE.md` (regra 5), `01-contexto/README.md` e a skill `dd-arch-diagrams` mandam registrar "1 linha no Log do `README.md` raiz", mas `scaffold/README.md` **não tem seção Log** (foi removida na genericização da 0.1.0). O §7.3d item 1 depende desse Log. **P4, resolvido pelo dono do kit:** criar a seção `## Log` no `scaffold/README.md` (formato `data | marco | link para _resumo.md`) como parte da T5.
 
 ## 1. BLUF
 
