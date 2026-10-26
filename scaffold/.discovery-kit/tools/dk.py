@@ -13,7 +13,8 @@ from pathlib import Path
 IGNORAR = {"_WIP", "_temp", ".discovery-kit", ".claude", ".obsidian", ".git"}
 FASES = {"contexto", "entendimento", "analise", "elicitacao", "solucao", "plano"}
 TIPOS = {"fonte-bruta", "reuniao", "entrada", "anexo-calculo", "wiki", "glossario",
-         "inventario", "analise", "duvidas-tecnicas", "elicitacao", "indice"}
+         "inventario", "analise", "duvidas-tecnicas", "elicitacao", "indice",
+         "adr", "backlog", "estimativa"}
 STATUS = {"rascunho", "hipotese", "validado", "em-aberto"}
 DATA_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 # prefixo -> mínimo de dígitos (Q-nnn, G-nnn, C-nn, H-nnn, R-nnn, D-nnn)

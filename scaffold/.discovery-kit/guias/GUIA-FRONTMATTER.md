@@ -30,8 +30,8 @@ Três namespaces, sempre `namespace/valor`, sem numeração — a ordem de traba
 | `fase/entendimento` | `00-fontes/`, `02-entendimento/` | Leitura/resumo dos documentos de entrada originais |
 | `fase/analise` | `03-analise-critica/` | Lacunas, contradições, hipóteses × evidências, riscos |
 | `fase/elicitacao` | `04-elicitacao/`, reuniões em `00-fontes/reunioes/` | Perguntas, pautas, stakeholders, extrações de reunião |
-| `fase/solucao` | `05-arquitetura/` (futuro) | Ainda não usado até o veredito GO |
-| `fase/plano` | `06-backlog/` (futuro) | Ainda não usado |
+| `fase/solucao` | `05-arquitetura/` | Arquitetura conceitual: abordagens, ADRs, diagramas (abre com GO-A ≥ condicionado) |
+| `fase/plano` | `06-backlog/` | PB macro (FR/NFR) e estimativa (estimativa com GO-B ≥ condicionado) |
 
 **Nuance:** a tag reflete a *natureza da atividade que gerou o conteúdo*, não necessariamente a pasta física do arquivo (ex.: uma análise de reunião de kickoff pode levar `fase/elicitacao` mesmo estando guardada em `02-entendimento/`, se o conteúdo é elicitação).
 
@@ -55,6 +55,9 @@ Sem área definida = só `tipo/indice` ou `tipo/glossario` (documentos estrutura
 | `tipo/analise` | Lacunas, contradições, dependências, riscos, hipóteses | `03-analise-critica/` |
 | `tipo/duvidas-tecnicas` | Dúvidas técnicas específicas de arquitetura | `03-analise-critica/` |
 | `tipo/elicitacao` | Perguntas por área, pauta de entrevistas, stakeholders | `04-elicitacao/` |
+| `tipo/adr` | Decisão de arquitetura (ADR curta) | `05-arquitetura/` |
+| `tipo/backlog` | PB macro: requisitos FR/NFR | `06-backlog/` |
+| `tipo/estimativa` | Calibração, status e premissas da estimativa | `06-backlog/` |
 | `tipo/indice` | README/índice de uma pasta | qualquer `README.md` interno |
 
 **Regra prática:** fontes brutas de reunião levam `tipo/reuniao` **+** `tipo/fonte-bruta` junto. Uma análise *derivada* de uma reunião leva só `tipo/reuniao`, sem `fonte-bruta`, porque já é interpretação (com marcação de confiança ✅/🟡/❓), não transcrição.
