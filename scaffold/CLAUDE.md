@@ -7,6 +7,8 @@ Guia operacional deste vault, carregado automaticamente toda sessão. Detalhes c
 
 Depois de criar ou editar conteúdo, rode `python3 .discovery-kit/tools/dk.py validar` (no Windows, `python` ou `py`) e corrija os erros (frontmatter e IDs; links saem como avisos, `--estrito` os reprova).
 
+**Ao abrir o dia e antes de encerrá-lo**, rode `python3 .discovery-kit/tools/check_fluxo.py --resumo` (no Windows, `python` ou `py`): mostra no máximo 15 linhas de avisos de retorno ao fluxo (`atualizado:` defasado, `_WIP` sem destino, GO sem `05`/`06`, NFR sem fonte). Nunca bloqueia; para cada aviso, atualize a pasta definitiva ou registre a pendência em `_WIP/<dia>/_resumo.md`. Sem hook: a execução é por esta regra.
+
 Os 3 guias acima são importados (`@`) e carregados com este arquivo em toda sessão, em qualquer SO — isto aqui é só o resumo operacional de referência rápida.
 
 ## Regras obrigatórias
