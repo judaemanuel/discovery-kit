@@ -40,7 +40,7 @@ Um esqueleto de vault Obsidian + Claude Code para condução de **discovery téc
 | `05-arquitetura/` | 3 — Solução | Como construir, dado que já podemos avançar? |
 | `06-backlog/` | 4 — Plano | O que entregar, em que ordem? |
 | `_WIP/` | — | Trabalho em andamento, ordenado por dia (ver guia dentro) |
-| `adaptadores/` | — | Saídas opcionais para terceiros (proposta, deck), fora do núcleo |
+| `adaptadores/` | — | Saídas opcionais para terceiros (documento técnico, deck), fora do núcleo |
 | `.discovery-kit/` | — | Guias de processo (`guias/`) e scripts de apoio (`tools/`: extração docx, inspeção xlsx, checagem de links, `check_fluxo.py`) |
 
 ## Mapa de etapas

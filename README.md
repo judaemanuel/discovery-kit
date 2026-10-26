@@ -6,7 +6,7 @@ Gerador de um vault Obsidian + Claude Code para **discovery técnico/negócio** 
 
 ## Fim do fluxo
 
-O fluxo vai do fonte ao GO e termina em **arquitetura conceitual** (`05`, 2 a 3 abordagens com recomendação e ADRs) e **PB macro** (`06`, requisitos FR/NFR com estimativa em faixa, de uso interno). O veredito tem 3 níveis (GO-A, GO-B, GO-C) e o que fica em `_WIP/` volta às pastas definitivas, com verificação por `check_fluxo.py`. Material para terceiros (proposta, deck) é opcional e vive em `adaptadores/`, fora do núcleo. Especificação: `docs/SPEC-evolucao-v2-fluxo-ate-pb-macro.md`.
+O fluxo vai do fonte ao GO e termina em **arquitetura conceitual** (`05`, 2 a 3 abordagens com recomendação e ADRs) e **PB macro** (`06`, requisitos FR/NFR com estimativa em faixa, de uso interno). O veredito tem 3 níveis (GO-A, GO-B, GO-C) e o que fica em `_WIP/` volta às pastas definitivas, com verificação por `check_fluxo.py`. Material para terceiros (documento técnico, deck) é opcional e vive em `adaptadores/`, fora do núcleo. Especificação: `docs/SPEC-evolucao-v2-fluxo-ate-pb-macro.md`.
 
 ## Como instalar uma instância
 
