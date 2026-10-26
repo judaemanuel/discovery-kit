@@ -122,12 +122,12 @@ def aviso_go(vault):
         pasta = vault / "05-arquitetura"
         conteudo = [p for p in pasta.rglob("*.md") if p.name != "README.md" and "_templates" not in p.parts] if pasta.is_dir() else []
         if not conteudo:
-            avisos.append("[go-sem-artefato] 05-arquitetura: GO-A ≥ condicionado e a pasta não tem abordagens, ADRs nem diagramas")
+            avisos.append("[go-sem-artefato] 05-arquitetura: GO-A >= condicionado e a pasta não tem abordagens, ADRs nem diagramas")
     if (niveis.get("B") or 0) >= 1:
         tamanhos = re.compile(r"\|\s*(S|M|L|XL)\s*\|")
         pasta = vault / "06-backlog"
         if not any(tamanhos.search(p.read_text(encoding="utf-8")) for p in pasta.rglob("*.md") if "calibracao" not in p.name):
-            avisos.append("[go-sem-artefato] 06-backlog: GO-B ≥ condicionado e nenhum item tem tamanho")
+            avisos.append("[go-sem-artefato] 06-backlog: GO-B >= condicionado e nenhum item tem tamanho")
     return avisos
 
 

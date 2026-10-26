@@ -21,6 +21,9 @@ for c in atualizado-antigo wip-nao-classificado go-sem-artefato nfr-sem-fonte; d
   echo "$out" | grep -qF "[$c]" || fail "desvio não detectado: $c"$'\n'"$out"
 done
 
+# console cp1252 (PowerShell do Windows) não pode quebrar a saída
+PYTHONIOENCODING=cp1252:strict python3 "$CF" "$FIX" --hoje 2026-03-10 >/dev/null 2>&1 || fail "saída quebra em console cp1252"
+
 # corrigir um desvio remove só o aviso dele
 cp -r "$FIX" "$TMP/v"
 sed -i 's/atualizado: 2026-03-01/atualizado: 2026-03-10/' "$TMP/v/04-elicitacao/perguntas-por-area.md"
