@@ -15,7 +15,7 @@ O discovery é um **loop sequencial com repasse de estado**, não pastas paralel
    ↓
 03-analise-critica/  Etapa 2 — "o que sabemos e qual é o veredito"
    │                 G (lacunas) · C (contradições) · H (hipóteses) · R (riscos) · D (dependências)
-   │                 + veredito GO/NO-GO com condições explícitas (README.md da pasta)
+   │                 + veredito GO/NO-GO em 3 níveis (GO-A, GO-B, GO-C) com condições explícitas (README.md da pasta)
    ↓
 04-elicitacao/       Etapa 2→3 — "o que falta perguntar, a quem, e como registrar a resposta"
    │                 Q-nnn (perguntas) organizadas por área + ondas de entrevista
@@ -25,10 +25,10 @@ O discovery é um **loop sequencial com repasse de estado**, não pastas paralel
    volta para 03 (atualiza G/C/H com o que a reunião confirmou/conflitou)
    e para 04 (fecha ou qualifica a Q-nnn correspondente)
    ↓
-repete até as condições de GO (03-analise-critica/README.md) serem atendidas
+repete até as condições do nível de GO visado (03-analise-critica/README.md) serem atendidas
    ↓
-05-arquitetura/      Etapa 3 — só começa depois do veredito GO
-06-backlog/          Etapa 4 — só começa depois de 05
+05-arquitetura/      Etapa 3 — só abre com GO-A ≥ condicionado
+06-backlog/          Etapa 4 — PB macro; estimativa só com GO-B ≥ condicionado
 ```
 
 ## Papel de cada pasta (uma frase cada)
@@ -75,9 +75,21 @@ repete até as condições de GO (03-analise-critica/README.md) serem atendidas
 
 **Não criar um documento de análise novo por conversa.** Isso é excepcional — reservado para lotes de reuniões não planejadas ou retroativas. No fluxo normal onda-a-onda, as 2 edições do passo 6–7 bastam.
 
+## GO em níveis
+
+O veredito único foi substituído por três níveis, cada um com condições numeradas e status por condição (formato no template de `03-analise-critica/README.md`).
+
+| Nível | Pergunta | Libera |
+|---|---|---|
+| **GO-A** | Sabemos o suficiente para desenhar uma arquitetura conceitual? | abrir `05` em modo conceitual |
+| **GO-B** | Sabemos o suficiente para estimar em faixa? | preencher estimativas em `06` |
+| **GO-C** | Sabemos o suficiente para detalhar e construir? | handoff para fora do kit (fora de escopo) |
+
+Cada nível é `NO-GO`, `GO condicionado` ou `GO`. **Um nível posterior não pode ser mais positivo que o anterior** (GO-B não pode ser mais positivo que GO-A). `05` só abre com GO-A ≥ condicionado; `06` só recebe estimativa com GO-B ≥ condicionado, e sem GO-B o PB macro existe **sem** tamanho/horas.
+
 ## Quando o veredito pode mudar
 
-NO-GO → GO condicional só quando as condições de `03-analise-critica/README.md` tiverem artefato (não relato oral). Não é um placar automático de "quantas perguntas respondidas" — uma pergunta P0 "respondida" por 1 pessoa sem autoridade canônica continua contando como não resolvida para efeito de veredito.
+Um nível sobe (por exemplo, NO-GO → GO condicionado) só quando as condições dele em `03-analise-critica/README.md` tiverem artefato (não relato oral). Não é um placar automático de "quantas perguntas respondidas" — uma pergunta P0 "respondida" por 1 pessoa sem autoridade canônica continua contando como não resolvida para efeito de veredito.
 
 ## Erro já cometido (não repetir)
 

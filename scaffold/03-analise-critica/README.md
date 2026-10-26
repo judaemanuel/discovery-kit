@@ -10,26 +10,66 @@ aliases: ["Índice — Análise Crítica"]
 
 ## BLUF
 
-**Recomendação: [preencher — GO / NO-GO / GO condicional] para a Etapa 3 (arquitetura).** [preencher: 1 parágrafo explicando por quê, citando os principais itens que travam a decisão]
+O veredito tem **três níveis**. Cada nível é `NO-GO`, `GO condicionado` ou `GO`, com condições numeradas, status por condição e artefato que sustenta (regra 6 do `CLAUDE.md`). Condições de `GO condicionado` são rastreadas a G/Q/C/R.
 
-**Condições para GO:** [preencher — numere as condições críticas, ex.: (1) modelo canônico de X; (2) sponsor e KPI formal; (3) processo as-is de Y confirmado com artefato; (4) ...]. Mantenha esta lista **explícita e numerada** — é o critério objetivo que evita um veredito "sentido", e permite rastrear status condição-por-condição depois de cada reunião.
+**Regra:** um nível posterior não pode ser mais positivo que o anterior (GO-B não pode ser mais positivo que GO-A; GO-C não pode ser mais positivo que GO-B). Ordem: `NO-GO` < `GO condicionado` < `GO`.
 
-**Status pós-reuniões (atualize esta tabela a cada rodada de reuniões, não crie documento novo):**
+Mantenha as linhas `**GO-A:**`, `**GO-B:**` e `**GO-C:**` no formato abaixo: o `check_fluxo.py` as lê.
 
-| Condição | Status |
-|---|---|
-| (1) [preencher] | ❌ / 🟡 Parcial / ✅ |
-| (2) [preencher] | ❌ / 🟡 Parcial / ✅ |
+### GO-A — arquitetura conceitual
+
+**Pergunta:** sabemos o suficiente para desenhar uma arquitetura conceitual? **Libera:** abrir `../05-arquitetura/` em modo conceitual (só abre com GO-A ≥ condicionado).
+
+**GO-A:** [preencher — NO-GO / GO condicionado / GO]
+
+[preencher: 1 parágrafo explicando por quê, citando os itens que travam a decisão]
+
+**Condições para GO-A:** [preencher — numere como GO-A.1, GO-A.2..., cada uma rastreada a G/Q/C/R. Lista **explícita e numerada**: é o critério objetivo que evita um veredito "sentido".]
+
+| Condição | Rastreio | Status |
+|---|---|---|
+| GO-A.1 [preencher] | G-nnn, Q-nnn | ❌ / 🟡 Parcial / ✅ |
+| GO-A.2 [preencher] | G-nnn | ❌ / 🟡 Parcial / ✅ |
+
+### GO-B — estimativa em faixa
+
+**Pergunta:** sabemos o suficiente para estimar em faixa? **Libera:** preencher tamanho e horas em `../06-backlog/` (sem GO-B ≥ condicionado, o PB macro existe sem tamanho/horas).
+
+**GO-B:** [preencher — NO-GO / GO condicionado / GO]
+
+[preencher: 1 parágrafo explicando por quê]
+
+**Condições para GO-B:** [preencher — GO-B.1, GO-B.2...]
+
+| Condição | Rastreio | Status |
+|---|---|---|
+| GO-B.1 [preencher] | G-nnn, Q-nnn | ❌ / 🟡 Parcial / ✅ |
+
+### GO-C — detalhar e construir
+
+**Pergunta:** sabemos o suficiente para detalhar e construir? **Libera:** handoff para fora do kit (fora de escopo).
+
+**GO-C:** [preencher — NO-GO / GO condicionado / GO]
+
+[preencher: 1 parágrafo explicando por quê]
+
+**Condições para GO-C:** [preencher — GO-C.1, GO-C.2...]
+
+| Condição | Rastreio | Status |
+|---|---|---|
+| GO-C.1 [preencher] | G-nnn, Q-nnn | ❌ / 🟡 Parcial / ✅ |
+
+**Status pós-reuniões:** atualize as tabelas de condição acima a cada rodada de reuniões; não crie documento novo.
 
 ## Condições do veredito após [data da rodada]
 
-[preencher quando houver reunião ou mudança de fonte: o veredito acima **não é alterado aqui** — esta seção lista o que mudou para a decisão do usuário sobre reavaliá-lo (regra 6: o veredito só muda com artefato).]
+[preencher quando houver reunião ou mudança de fonte: os vereditos acima **não são alterados aqui** — esta seção lista o que mudou para a decisão do usuário sobre reavaliá-lo (regra 6: o veredito só muda com artefato).]
 
 | Mudança | Efeito nas condições |
 |---|---|
-| [preencher: o que mudou, com fonte] | [preencher: condição (n) sai de ❌ para 🟡; G/C/R afetados] |
+| [preencher: o que mudou, com fonte] | [preencher: condição GO-x.n sai de ❌ para 🟡; G/C/R afetados] |
 
-Ainda abertas para o GO: [preencher]. **Decisão do usuário:** [preencher — manter o veredito ou reavaliar, e com qual artefato].
+Ainda abertas, por nível: [preencher]. **Decisão do usuário:** [preencher — manter os vereditos ou reavaliar algum nível, e com qual artefato].
 
 ## Top-N achados (priorizados)
 
