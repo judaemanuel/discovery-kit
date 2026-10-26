@@ -10,7 +10,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-IGNORAR = {"_WIP", "_temp", ".discovery-kit", ".claude", ".obsidian", ".git"}
+IGNORAR = {"_WIP", "_temp", ".discovery-kit", ".claude", ".obsidian", ".git", "adaptadores"}
 FASES = {"contexto", "entendimento", "analise", "elicitacao", "solucao", "plano"}
 TIPOS = {"fonte-bruta", "reuniao", "entrada", "anexo-calculo", "wiki", "glossario",
          "inventario", "analise", "duvidas-tecnicas", "elicitacao", "indice",

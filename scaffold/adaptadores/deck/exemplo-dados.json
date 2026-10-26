@@ -1,0 +1,10 @@
+{
+  "perfil": "padrao",
+  "titulo": "[preencher: título da apresentação]",
+  "slides": [
+    {"titulo": "Contexto", "bullets": ["[preencher: de 01-contexto e 02-entendimento]"]},
+    {"titulo": "Veredito", "bullets": ["[preencher: nível de GO e condições, de 03-analise-critica]"]},
+    {"titulo": "Abordagem recomendada", "bullets": ["[preencher: de 05-arquitetura/abordagens.md]"]},
+    {"titulo": "Requisitos", "tabela": {"cabecalho": ["ID", "Descrição"], "linhas": [["[preencher]", "[preencher]"]]}}
+  ]
+}
