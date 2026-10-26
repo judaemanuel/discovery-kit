@@ -40,8 +40,20 @@ repete até as condições de GO (03-analise-critica/README.md) serem atendidas
 | `02-entendimento/` | O que os documentos de entrada pedem, resumido e cruzado? |
 | `03-analise-critica/` | O que não bate, o que falta, e podemos avançar? |
 | `04-elicitacao/` | O que perguntar, a quem, e o que já foi perguntado? |
-| `05-arquitetura/` (futuro) | Como construir, dado que já podemos avançar? |
-| `06-backlog/` (futuro) | O que entregar, em que ordem? |
+| `05-arquitetura/` | Como construir, dado que já podemos avançar? |
+| `06-backlog/` | O que entregar, em que ordem? |
+
+### Mapa de etapas
+
+| Pasta | Etapa | Saída |
+|---|---|---|
+| `00-fontes/` | — | fonte da verdade |
+| `01-contexto/` | 0 | o que já existe |
+| `02-entendimento/` | 1 | o que o pedido diz |
+| `03-analise-critica/` | 2 | veredito + condições por nível de GO |
+| `04-elicitacao/` | 2→3 | perguntas, ondas, respostas |
+| `05-arquitetura/` | 3 | arquitetura conceitual (hipótese) |
+| `06-backlog/` | 4 | PB macro (FR/NFR) com estimativa |
 
 **Não fundir `03` e `04`**: uma é retrospectiva (analisa o que já existe), a outra é prospectiva (prepara a próxima coleta). Fundir quebraria a distinção causa → efeito.
 

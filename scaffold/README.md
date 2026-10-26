@@ -34,10 +34,22 @@ Um esqueleto de vault Obsidian + Claude Code para condução de **discovery téc
 | `02-entendimento/` | 1 — Entendimento | O que os documentos de entrada pedem? (EDS, PRD, e-mail, ticket — o que houver) |
 | `03-analise-critica/` | 2 — Análise | O que não bate, o que falta, podemos avançar? |
 | `04-elicitacao/` | 2→3 — Elicitação | O que perguntar, a quem, o que já foi perguntado? |
-| `05-arquitetura/` | 3 — Solução (futuro) | Como construir, dado que já podemos avançar? |
-| `06-backlog/` | 4 — Plano (futuro) | O que entregar, em que ordem? |
+| `05-arquitetura/` | 3 — Solução | Como construir, dado que já podemos avançar? |
+| `06-backlog/` | 4 — Plano | O que entregar, em que ordem? |
 | `_WIP/` | — | Trabalho em andamento, ordenado por dia (ver guia dentro) |
 | `.discovery-kit/` | — | Guias de processo (`guias/`) e scripts de apoio (`tools/`: extração docx, inspeção xlsx, checagem de links) |
+
+## Mapa de etapas
+
+| Pasta | Etapa | Saída |
+|---|---|---|
+| `00-fontes/` | — | fonte da verdade |
+| `01-contexto/` | 0 | o que já existe |
+| `02-entendimento/` | 1 | o que o pedido diz |
+| `03-analise-critica/` | 2 | veredito + condições por nível de GO |
+| `04-elicitacao/` | 2→3 | perguntas, ondas, respostas |
+| `05-arquitetura/` | 3 | arquitetura conceitual (hipótese) |
+| `06-backlog/` | 4 | PB macro (FR/NFR) com estimativa |
 
 ## Checklist de replicação do Obsidian
 
