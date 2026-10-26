@@ -4,7 +4,7 @@
 
 ## BLUF
 
-Todo arquivo de conteúdo (fora de `_WIP/`, `_temp/`, `.tools/`) deve abrir com:
+Todo arquivo de conteúdo (fora de `_WIP/`, `_temp/`, `.discovery/`) deve abrir com:
 
 ```yaml
 ---

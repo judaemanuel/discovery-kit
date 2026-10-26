@@ -11,9 +11,6 @@
 
 ```
 _WIP/
-├── README.md             # este guia
-├── GUIA-FRONTMATTER.md
-├── GUIA-FLUXO-DISCOVERY.md
 ├── 2026-01-01/            # pasta do dia (formato YYYY-MM-DD) — exemplo ilustrativo
 │   ├── plano-exemplo.md
 │   ├── pauta-1-exemplo.md

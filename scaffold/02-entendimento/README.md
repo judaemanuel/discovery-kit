@@ -16,7 +16,7 @@ Resumo estruturado de cada documento de entrada + 1 visão consolidada que cruza
 |---|---|
 | `<documento>-resumo.md` (1 por documento de entrada) | Leitura seção a seção, com citação de volta para `00-fontes/`, marcando ✅ evidência / 🟡 inferência / ❓ a validar |
 | `visao-consolidada.md` | BLUF do que a soma dos documentos pede; jornada ponta a ponta por ator; diagrama de sistemas/fronteiras; onde os documentos de entrada se contradizem ou deixam lacuna (handoff para `03-analise-critica/`) |
-| `anexos-calculo.md` (se houver planilhas/fórmulas anexas) | Leitura segura (nunca executar macro, nunca abrir no Excel original) — ver `.tools/inspect_xlsx.py` e `dump_range.py` |
+| `anexos-calculo.md` (se houver planilhas/fórmulas anexas) | Leitura segura (nunca executar macro, nunca abrir no Excel original) — ver `.discovery/tools/inspect_xlsx.py` e `dump_range.py` |
 
 ## Regra de ouro
 

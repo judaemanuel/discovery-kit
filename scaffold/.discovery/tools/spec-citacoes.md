@@ -1,6 +1,6 @@
 # Spec — padronização de citações (template)
 
-Objetivo: toda citação vira link navegável até o trecho exato. **Mude só citações** — nunca o texto, a análise, os status (✅/🟡/❓) ou os IDs (G-/C-/H-/Q-/R-/D-). Não edite `00-fontes/` nem `.tools/`. Atualize `atualizado:` do frontmatter nos arquivos alterados.
+Objetivo: toda citação vira link navegável até o trecho exato. **Mude só citações** — nunca o texto, a análise, os status (✅/🟡/❓) ou os IDs (G-/C-/H-/Q-/R-/D-). Não edite `00-fontes/` nem `.discovery/`. Atualize `atualizado:` do frontmatter nos arquivos alterados.
 
 ## Insumos (ajuste para o seu projeto)
 
