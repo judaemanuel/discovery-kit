@@ -14,6 +14,8 @@ atualizado: YYYY-MM-DD
 ---
 ```
 
+`atualizado` é dispensado em `tipo/indice` (README de pasta), mas, se presente, deve ser uma data válida. `python3 .discovery/tools/dk.py validar` confere estas regras.
+
 `aliases` é opcional, só para índices (`README.md` de cada pasta). `area/*` pode repetir (0 a N valores); `fase/*` e `tipo/<categoria-principal>` costumam ser únicos.
 
 ## Campo `tags`

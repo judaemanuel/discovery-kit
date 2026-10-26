@@ -55,7 +55,7 @@ Ainda abertas para o GO: [preencher]. **Decisão do usuário:** [preencher — m
 - `contradicoes.md`: C-01..
 - `riscos.md`: R-001..
 - `dependencias.md`: D-001..
-- `hipoteses-vs-evidencias.md`: H-01..
+- `hipoteses-vs-evidencias.md`: H-001..
 - Visão de ponta a ponta: `../02-entendimento/visao-consolidada.md`
 - Elicitação: `../04-elicitacao/`
 

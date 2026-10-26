@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.3.0
+
+Validador do vault.
+
+- `.discovery/tools/dk.py validar [VAULT] [--estrito]` (python3 stdlib): confere o frontmatter conforme `GUIA-FRONTMATTER` (tags `fase/area/tipo`, `status`, `atualizado`) e os IDs `Q/G/C/H/R/D` (formato, definição duplicada, referência sem definição). Os links são checados via `check_links.py`: viram avisos e só reprovam com `--estrito`.
+- `tipo/indice` passa a dispensar `atualizado` (os READMEs do scaffold nunca tiveram o campo). Documentado em `GUIA-FRONTMATTER`.
+- `03-analise-critica/README.md`: `H-01..` corrigido para `H-001..` (convenção `H-nnn`).
+- `CLAUDE.md` da instância manda rodar o validador depois de editar conteúdo.
+- Novo `tests/test_dk_py.sh`.
+
 ## 0.2.0
 
 Separação gerador/instância, no padrão do `catalisa`. **Incompatível com a 0.1.0**: recrie a instância com `install.sh`.

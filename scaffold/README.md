@@ -23,7 +23,7 @@ Um esqueleto de vault Obsidian + Claude Code para condução de **discovery téc
 4. **Popule `00-fontes/`** com os documentos originais do seu discovery (specs, EDS, PRDs, etc.).
 5. **Leia `.discovery/guias/GUIA-FLUXO-DISCOVERY.md`** antes de começar — explica o loop `03-analise-critica/` ↔ `04-elicitacao/` ↔ reunião real, que é o motivo deste scaffold existir.
 6. **Preencha os `README.md` de `03-analise-critica/` e `04-elicitacao/`** primeiro — eles têm os `[preencher]` que forçam você a declarar as condições de GO/NO-GO e as ondas de entrevista antes de começar a trabalhar, não depois.
-7. Antes do primeiro uso real, rode `python3 .discovery/tools/check_links.py .` para validar os wikilinks. **Esperado hoje (scaffold vazio): ~19 avisos** — a maioria é link para arquivo que você ainda vai criar (`stakeholders.md`, `contradicoes.md`, etc. — fazem parte do conteúdo do discovery, não do scaffold) ou falso-positivo do próprio script com `README.md` duplicado por pasta e `\|` escapado em célula de tabela. Rode de novo depois de criar o conteúdo real — aí os avisos restantes são genuínos.
+7. Antes do primeiro uso real, rode `python3 .discovery/tools/dk.py validar` (frontmatter, IDs e, via `check_links.py`, wikilinks). **Esperado hoje (scaffold vazio): ~19 avisos** — a maioria é link para arquivo que você ainda vai criar (`stakeholders.md`, `contradicoes.md`, etc. — fazem parte do conteúdo do discovery, não do scaffold) ou falso-positivo do próprio script com `README.md` duplicado por pasta e `\|` escapado em célula de tabela. Rode de novo depois de criar o conteúdo real — aí os avisos restantes são genuínos.
 
 ## Estrutura
 
