@@ -51,6 +51,14 @@ Um esqueleto de vault Obsidian + Claude Code para condução de **discovery téc
 | `05-arquitetura/` | 3 | arquitetura conceitual (hipótese) |
 | `06-backlog/` | 4 | PB macro (FR/NFR) com estimativa |
 
+## Log
+
+1 linha por marco (reunião ingerida, decisão, mudança de escopo, artefato concluído), com link para o resumo do dia. O detalhe fica em `_WIP/<data>/_resumo.md`, não aqui.
+
+| Data | Marco | Resumo |
+|---|---|---|
+| [preencher: YYYY-MM-DD] | [preencher: o que mudou] | `[[_WIP/YYYY-MM-DD/_resumo]]` |
+
 ## Checklist de replicação do Obsidian
 
 Ver `.discovery-kit/guias/obsidian-config-replicar.md` para o passo a passo completo (tema, plugins, cores do grafo por fase, armadilhas já vividas — ex.: `textFadeMultiplier` do grafo precisa ficar em `0`).
