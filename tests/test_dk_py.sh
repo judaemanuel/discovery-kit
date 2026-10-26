@@ -52,6 +52,14 @@ set +e; out=$(roda); rc=$?; set -e
 [ "$rc" -eq 1 ] && echo "$out" | grep -qF "G-001 definido mais de uma vez" || fail "ID duplicado não detectado"$'\n'"$out"
 rm "$V/03-analise-critica/a.md" "$V/03-analise-critica/b.md"
 
+# tipos da fase de solução/plano: adr, backlog, estimativa
+for t in adr backlog estimativa; do
+  novo="${OK/fase\/analise/fase\/solucao}"
+  note 05-arquitetura/novo.md <<<"${novo/tipo\/analise/tipo\/$t}"
+  roda >/dev/null || fail "tipo/$t deveria validar"
+  rm "$V/05-arquitetura/novo.md"
+done
+
 # arquivos fora do escopo não são validados
 note _WIP/2026-10-26/plano-x.md <<<"sem frontmatter, R-9"
 roda >/dev/null || fail "_WIP não deveria ser validado"

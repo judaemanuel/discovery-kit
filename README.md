@@ -4,6 +4,10 @@ Gerador de um vault Obsidian + Claude Code para **discovery técnico/negócio** 
 
 **Origem:** extraído e genericizado em 2026-10-02 a partir de um vault real, depois de um ciclo completo de uso (reuniões de elicitação, catálogos de dúvidas, veredito GO/NO-GO rastreado). O que está aqui é o que **comprovadamente** funcionou — não é um template teórico.
 
+## Fim do fluxo
+
+O fluxo vai do fonte ao GO e termina em **arquitetura conceitual** (`05`, 2 a 3 abordagens com recomendação e ADRs) e **PB macro** (`06`, requisitos FR/NFR com estimativa em faixa, de uso interno). O veredito tem 3 níveis (GO-A, GO-B, GO-C) e o que fica em `_WIP/` volta às pastas definitivas, com verificação por `check_fluxo.py`. Material para terceiros (documento técnico, deck) é opcional e vive em `adaptadores/`, fora do núcleo. Especificação: `docs/SPEC-evolucao-v2-fluxo-ate-pb-macro.md`.
+
 ## Como instalar uma instância
 
 ```bash
@@ -22,7 +26,7 @@ Requisitos: `bash` e `git` para rodar o `install.sh` (no Windows, Git Bash ou WS
 | `install.sh` | Cria uma instância a partir do scaffold |
 | `discovery-kit.json` | Versão do gerador e lista `sistema` |
 | `docs/` | Material do método (comparativo de metodologias, trilha greenfield, briefing, prompt de abertura). **Não** é copiado para a instância |
-| `tests/` | Testes do gerador e do scaffold |
+| `tests/` | Testes do gerador e do scaffold; `tests/fixtures/` tem o vault sintético com desvios de fluxo plantados (não vai para a instância) |
 
 ## Sem update automático
 

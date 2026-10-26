@@ -42,6 +42,34 @@ _WIP/
 
 Não inventar categorias novas sem necessidade — se o conteúdo não se encaixa em nenhum padrão acima, nomear descritivamente e decidir destino ao final do dia.
 
+## Promoção: de `_WIP/` para a pasta definitiva
+
+Material em `_WIP/<dia>/` não é destino final. Ao concluir um artefato, promova conforme o tipo:
+
+| Artefato em `_WIP/<dia>/` | Destino definitivo | Condição |
+|---|---|---|
+| `correcao-*` | aplicar na pasta de origem e arquivar/apagar | sempre |
+| `pauta-*` | `04-elicitacao/pauta-entrevistas.md` | após a reunião |
+| `plano-*` de análise | `03-analise-critica/*` | quando virar decisão |
+| arquitetura/diagrama | `05-arquitetura/` com `status: hipotese` | GO-A ≥ condicionado |
+| lista de requisitos/estimativa | `06-backlog/` | GO-B ≥ condicionado (estimativa); antes disso, só PB sem tamanho |
+| `mensagem-*` | permanece em `_WIP` e é descartada após o envio | com confirmação |
+| material de apresentação para terceiros (deck, documento externo) | `adaptadores/` | opcional |
+
+## Modelo do `_resumo.md`
+
+Todo `_WIP/<dia>/_resumo.md` termina com a seção **"Retornos ao fluxo"**:
+
+```markdown
+## Retornos ao fluxo
+
+| artefato | destino | situação |
+|---|---|---|
+| [preencher: arquivo em _WIP] | [preencher: pasta definitiva] | feito / pendente / justificado |
+```
+
+`pendente` sem justificativa por mais de 2 dias vira alerta no `check_fluxo.py`. `justificado` exige o motivo na própria linha (por exemplo, "aguarda transcript").
+
 ## O que é manual vs. o que é automático
 
 Os guias são carregados a cada sessão por `@import` no `CLAUDE.md` (sem hook, portável entre SOs). Para bloqueio de ação (não só injeção de contexto), hooks `PreToolUse` são o mecanismo correto — mas valem o custo de manutenção só para regras mecanicamente checáveis (nome de arquivo, frontmatter obrigatório), não para julgamento semântico (ex.: "este conteúdo é um resumo de dia?").

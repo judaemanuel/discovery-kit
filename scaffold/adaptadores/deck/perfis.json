@@ -1,0 +1,4 @@
+{
+  "padrao": {"fonte": "Calibri", "cor_fundo": "FFFFFF", "cor_titulo": "1F3864", "cor_texto": "333333"},
+  "escuro": {"fonte": "Calibri", "cor_fundo": "1E1E1E", "cor_titulo": "F2F2F2", "cor_texto": "D9D9D9"}
+}

@@ -10,6 +10,8 @@ aliases: ["Índice — Discovery Kit"]
 
 Um esqueleto de vault Obsidian + Claude Code para condução de **discovery técnico/negócio** (levantamento de requisitos, análise crítica de especificações, elicitação de stakeholders, veredito GO/NO-GO para arquitetura), com:
 - Estrutura de pastas por etapa (fonte → contexto → entendimento → análise → elicitação → arquitetura → backlog)
+- Fim de fluxo definido: veredito em 3 níveis (GO-A/B/C), arquitetura conceitual em `05` e PB macro com estimativa em faixa em `06`
+- Retorno ao fluxo: o que nasce em `_WIP/` volta às pastas definitivas, conferido por `check_fluxo.py`
 - Convenções de frontmatter, nomenclatura e IDs (`Q-nnn`, `G-nnn`, `C-nn`, `H-nnn`, `R-nnn`, `D-nnn`)
 - Um **loop de processo explícito** entre análise crítica e elicitação (ver `.discovery-kit/guias/GUIA-FLUXO-DISCOVERY.md`) — a lição mais cara do projeto original foi não ter esse loop fechado em tempo real
 - `CLAUDE.md` que importa (`@`) os guias de processo, carregados automaticamente em toda sessão Claude Code, em Linux, macOS e Windows
@@ -24,6 +26,7 @@ Um esqueleto de vault Obsidian + Claude Code para condução de **discovery téc
 5. **Leia `.discovery-kit/guias/GUIA-FLUXO-DISCOVERY.md`** antes de começar — explica o loop `03-analise-critica/` ↔ `04-elicitacao/` ↔ reunião real, que é o motivo deste scaffold existir.
 6. **Preencha os `README.md` de `03-analise-critica/` e `04-elicitacao/`** primeiro — eles têm os `[preencher]` que forçam você a declarar as condições de GO/NO-GO e as ondas de entrevista antes de começar a trabalhar, não depois.
 7. Antes do primeiro uso real, rode `python3 .discovery-kit/tools/dk.py validar` (no Windows, `python` ou `py`) (frontmatter, IDs e, via `check_links.py`, wikilinks). **Esperado hoje (scaffold vazio): ~19 avisos** — a maioria é link para arquivo que você ainda vai criar (`stakeholders.md`, `contradicoes.md`, etc. — fazem parte do conteúdo do discovery, não do scaffold) ou falso-positivo do próprio script com `README.md` duplicado por pasta e `\|` escapado em célula de tabela. Rode de novo depois de criar o conteúdo real — aí os avisos restantes são genuínos.
+8. Ao abrir e ao encerrar o dia, rode `python3 .discovery-kit/tools/check_fluxo.py --resumo` (no Windows, `python` ou `py`): avisa se `_WIP/` ou o `atualizado:` das pastas definitivas ficaram para trás. Esperado no scaffold vazio: 0 avisos.
 
 ## Estrutura
 
@@ -34,10 +37,31 @@ Um esqueleto de vault Obsidian + Claude Code para condução de **discovery téc
 | `02-entendimento/` | 1 — Entendimento | O que os documentos de entrada pedem? (EDS, PRD, e-mail, ticket — o que houver) |
 | `03-analise-critica/` | 2 — Análise | O que não bate, o que falta, podemos avançar? |
 | `04-elicitacao/` | 2→3 — Elicitação | O que perguntar, a quem, o que já foi perguntado? |
-| `05-arquitetura/` | 3 — Solução (futuro) | Como construir, dado que já podemos avançar? |
-| `06-backlog/` | 4 — Plano (futuro) | O que entregar, em que ordem? |
+| `05-arquitetura/` | 3 — Solução | Como construir, dado que já podemos avançar? |
+| `06-backlog/` | 4 — Plano | O que entregar, em que ordem? |
 | `_WIP/` | — | Trabalho em andamento, ordenado por dia (ver guia dentro) |
-| `.discovery-kit/` | — | Guias de processo (`guias/`) e scripts de apoio (`tools/`: extração docx, inspeção xlsx, checagem de links) |
+| `adaptadores/` | — | Saídas opcionais para terceiros (documento técnico, deck), fora do núcleo |
+| `.discovery-kit/` | — | Guias de processo (`guias/`) e scripts de apoio (`tools/`: extração docx, inspeção xlsx, checagem de links, `check_fluxo.py`) |
+
+## Mapa de etapas
+
+| Pasta | Etapa | Saída |
+|---|---|---|
+| `00-fontes/` | — | fonte da verdade |
+| `01-contexto/` | 0 | o que já existe |
+| `02-entendimento/` | 1 | o que o pedido diz |
+| `03-analise-critica/` | 2 | veredito + condições por nível de GO |
+| `04-elicitacao/` | 2→3 | perguntas, ondas, respostas |
+| `05-arquitetura/` | 3 | arquitetura conceitual (hipótese) |
+| `06-backlog/` | 4 | PB macro (FR/NFR) com estimativa |
+
+## Log
+
+1 linha por marco (reunião ingerida, decisão, mudança de escopo, artefato concluído), com link para o resumo do dia. O detalhe fica em `_WIP/<data>/_resumo.md`, não aqui.
+
+| Data | Marco | Resumo |
+|---|---|---|
+| [preencher: YYYY-MM-DD] | [preencher: o que mudou] | `[[_WIP/YYYY-MM-DD/_resumo]]` |
 
 ## Checklist de replicação do Obsidian
 
