@@ -11,6 +11,7 @@ Documentos originais e extrações literais. **Fonte da verdade — nunca editar
 Subpastas sugeridas (renomeie livremente):
 - `entrada/` (ou o nome que os insumos tiverem no seu projeto — e-mail, contrato, RFP, EDS, PRD, briefing...)
 - `reunioes/` — extrações de gravação/transcrição, com `tipo/fonte-bruta` no frontmatter.
+- `historico/` — dados de entregas anteriores para calibrar a estimativa (ver `historico/README.md`); opcional.
 
 ## Convenção de citação
 
