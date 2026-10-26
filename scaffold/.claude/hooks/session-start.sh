@@ -5,7 +5,7 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 
-exec python3 -I - "$ROOT/.discovery/guias" <<'PY'
+exec python3 -I - "$ROOT/.discovery-kit/guias" <<'PY'
 import json, sys
 from pathlib import Path
 

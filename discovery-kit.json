@@ -3,7 +3,7 @@
   "gerador": "discovery-kit",
   "sistema": [
     ".claude",
-    ".discovery",
+    ".discovery-kit",
     "CLAUDE.md"
   ]
 }

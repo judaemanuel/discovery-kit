@@ -4,8 +4,8 @@ cd "$(dirname "$0")/.."
 fail() { echo "FAIL: $1"; exit 1; }
 V=scaffold
 
-# todo caminho .discovery/.claude citado em CLAUDE.md, README e guias existe
-for f in $V/CLAUDE.md $V/README.md $V/.discovery/guias/*.md; do
+# todo caminho .discovery-kit/.claude citado em CLAUDE.md, README e guias existe
+for f in $V/CLAUDE.md $V/README.md $V/.discovery-kit/guias/*.md; do
   for p in $(grep -oE '\.(discovery|claude)/[A-Za-z0-9_./-]*[A-Za-z0-9_]' "$f" | sort -u); do
     [ -e "$V/$p" ] || fail "$f cita caminho inexistente: $p"
   done

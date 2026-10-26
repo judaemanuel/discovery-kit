@@ -63,7 +63,7 @@ Defaults do plugin, **exceto**:
 | `02-entendimento` | `LiBookOpen` | `#3fae6a` |
 | `03-analise-critica` | `LiSearch` | `#e0a030` |
 | `04-elicitacao` | `LiHelpCircle` | `#d9534f` |
-| `.discovery` | `LiWrench` | (sem cor) |
+| `.discovery-kit` | `LiWrench` | (sem cor) |
 | `_WIP` | `LiClock` | `#6a6a6a` |
 
 Demais configs do Iconize em default (emoji style: native, font size 16, ícones em notas e links ligados).

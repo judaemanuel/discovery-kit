@@ -12,13 +12,13 @@ Gerador de um vault Obsidian + Claude Code para **discovery técnico/negócio** 
 
 Sem argumento, a instância é criada em `../discovery-instance`. O script copia `scaffold/` para o destino, grava `.discovery-kit-version.json` (versão do gerador e data) e faz o commit inicial. O destino precisa estar vazio ou não existir.
 
-Requisitos: `bash`, `git` e `python3` (usado pelo hook `SessionStart` e pelos scripts de `.discovery/tools/`).
+Requisitos: `bash`, `git` e `python3` (usado pelo hook `SessionStart` e pelos scripts de `.discovery-kit/tools/`).
 
 ## Estrutura do repositório
 
 | Caminho | O que é |
 |---|---|
-| `scaffold/` | Espelho exato de uma instância (vault, `.claude/`, `.discovery/`, `.obsidian/`) |
+| `scaffold/` | Espelho exato de uma instância (vault, `.claude/`, `.discovery-kit/`, `.obsidian/`) |
 | `install.sh` | Cria uma instância a partir do scaffold |
 | `discovery-kit.json` | Versão do gerador e lista `sistema` |
 | `docs/` | Material do método (comparativo de metodologias, trilha greenfield, briefing, prompt de abertura). **Não** é copiado para a instância |
@@ -33,12 +33,12 @@ Instâncias já criadas não são atualizadas quando o gerador muda. Para portar
 Ao extrair o scaffold, algumas escolhas de "o que generalizar vs. o que preservar" foram feitas por julgamento:
 - `scaffold/04-elicitacao/README.md`: a "Onda 0" foi generalizada para "gates de compliance/privacidade/segurança a abrir no dia 1". Pode não se aplicar a todo projeto; ajuste ou remova se seu domínio não tiver gates regulatórios cedo.
 - `scaffold/03-analise-critica/README.md`: a tabela "Status pós-reuniões" ficou como esqueleto vazio (2 linhas de exemplo), para mostrar a forma e não só descrevê-la.
-- `.discovery/tools/check_links.py`: a lista `SKIP` e o conjunto `NOT_CONF` (exceções de ID) foram ajustados para este scaffold e esvaziados, respectivamente.
-- `.discovery/tools/spec-citacoes.md`: o mais reescrito dos arquivos copiados; ficou só a estrutura de 7 regras e o formato de relatório.
+- `.discovery-kit/tools/check_links.py`: a lista `SKIP` e o conjunto `NOT_CONF` (exceções de ID) foram ajustados para este scaffold e esvaziados, respectivamente.
+- `.discovery-kit/tools/spec-citacoes.md`: o mais reescrito dos arquivos copiados; ficou só a estrutura de 7 regras e o formato de relatório.
 
 ## O que foi deixado de fora (de propósito)
 
-- Plugins do Obsidian (binários/dados) e o tema Minimal: instale pelo *Community plugins* seguindo `scaffold/.discovery/guias/obsidian-config-replicar.md`. Não são vendorizados, para evitar código de terceiros desatualizado e credenciais salvas em `data.json`.
+- Plugins do Obsidian (binários/dados) e o tema Minimal: instale pelo *Community plugins* seguindo `scaffold/.discovery-kit/guias/obsidian-config-replicar.md`. Não são vendorizados, para evitar código de terceiros desatualizado e credenciais salvas em `data.json`.
 - `workspace.json` e `graph.json` do Obsidian: são estado de sessão, não configuração.
 - Qualquer dado específico do projeto original (IDs de Confluence, nomes de pessoas/sistemas, achados reais).
 

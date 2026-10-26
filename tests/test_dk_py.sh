@@ -7,7 +7,7 @@ TMP=$(mktemp -d)
 trap 'rm -rf "$TMP"' EXIT
 V="$TMP/vault"
 cp -r scaffold "$V"
-DK="$V/.discovery/tools/dk.py"
+DK="$V/.discovery-kit/tools/dk.py"
 [ -f "$DK" ] || fail "$DK ausente"
 
 note() { mkdir -p "$(dirname "$V/$1")"; cat > "$V/$1"; }

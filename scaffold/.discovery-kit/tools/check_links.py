@@ -2,7 +2,7 @@
 import os, re, sys, glob
 
 ROOT = sys.argv[1] if len(sys.argv) > 1 else "."
-SKIP = ("_WIP", "_temp", ".obsidian", ".discovery")
+SKIP = ("_WIP", "_temp", ".obsidian", ".discovery-kit")
 NOT_CONF = set()  # preencha com IDs numéricos a ignorar (ex.: nº de apólice, build), se aplicável
 OLD = re.compile(r"\[(?:WIKI:|ANX|RAW-\d|CONF:|FIGMA|EDS-[12][^\]]*)[^\]]*\](?!\])|\bid \d{8,10}\b")
 
