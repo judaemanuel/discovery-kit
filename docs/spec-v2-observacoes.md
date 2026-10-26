@@ -11,3 +11,12 @@ Pontos fora do escopo ou desvios de ordem registrados durante a implementação.
 | O5 | A heurística "NFR sem fonte" exigida pela fixture (T9) e pela verificação da T6 não consta da lista de §7.3d do `check_fluxo.py` (itens 1 a 5). | T6/T9 | Implementada como heurística 6 (`nfr-sem-fonte`): linha RNF-nnn sem Origem e sem status `lacuna` |
 | O6 | T9 executada antes da T6 (ordem efetiva T9 → T6): a verificação da T6 depende da fixture e `tests/test_check_fluxo.sh` a consome. | T6/T9 | Ordem efetiva: T1, T2, T8, T3, T4, T5, T9, T6, T7, T10 |
 | O7 | `python-pptx` não está instalado nesta máquina e não foi baixado (instalação de pacote externo exige decisão do dono). A **geração** do `.pptx` não foi executada; só a validação dos dados (`--validar`, stdlib) e o caminho de erro sem a biblioteca. `tests/test_adaptadores.sh` gera o `.pptx` automaticamente quando a biblioteca existe. | T7 | Pendência: rodar `tests/test_adaptadores.sh` em máquina com `python-pptx` e abrir o `.pptx` num visualizador |
+
+## Decisões do dono do kit sobre as pendências
+
+| # | Decisão |
+|---|---|
+| P-A | Manter "preço" no rótulo de `06` (texto da SPEC §6.3.5) como exceção na busca de fechamento (O4) |
+| P-B | Termos antigos em `dd-arch-diagrams/templates/exemplo/` e `01-contexto/README.md:22` ficam fora desta SPEC; sanitização à parte |
+| P-C | O7 atendida em parte: `tests/test_adaptadores.sh` passou com `python-pptx` 1.0.2 num venv temporário e um `.pptx` de 3 slides (capa, bullets, tabela) foi gerado e relido pela biblioteca. **Não foi aberto num visualizador**: layout e legibilidade seguem não verificados |
+| P-D | "Bloqueante" fica só como coluna do `pb-macro.md`; formalizar em G-nnn depois do Teste 1 (SPEC §11) |
